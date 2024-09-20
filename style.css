@@ -44,7 +44,7 @@ body {
     display: block;
     text-decoration: none;
     margin-bottom: 1em;
-    
+
 }
 
 .botao_secundario {
@@ -81,7 +81,7 @@ body {
     margin: 0 6em;
 }
 
-.descricao__titulo{
+.descricao__titulo {
     font-weight: 700;
     font-size: 48px;
     color: var(--cor-titulo);
@@ -106,7 +106,7 @@ body {
     font-size: 48px;
 }
 
-.servicos__lista{
+.servicos__lista {
     display: flex;
     justify-content: center;
     list-style-type: none;
@@ -131,40 +131,83 @@ body {
     width: 40%;
 }
 
-.rodape__lista{
+.rodape__lista {
     display: flex;
     justify-content: center;
     list-style-type: none;
     margin-top: 1em;
 }
 
-.lista__link a{
+.lista__link a {
     text-decoration: none;
     color: var(--cor-titulo);
     margin-left: 1em;
 }
 
-.rodape__texto{
+.rodape__texto {
     margin: 1em 0;
     color: var(--cinza-secundario);
     font-size: 14px;
 }
 
-.rodape{
+.rodape {
     text-align: center;
     margin: 5em 3em;
 }
 
-.rodape__logo{
+.rodape__logo {
     width: 15%;
 }
 
-.lista__link a:hover{
+.lista__link a:hover {
     color: var(--botao-azul);
 
 }
 
-.container__botao:hover{
+.container__botao:hover {
     background-color: var(--botao-azul-efeito);
     color: var(--fundo);
+}
+
+.slider {
+    position: center;
+    width: 40%;
+    overflow: hidden;
+    margin-left: 140px;
+}
+.images {
+    display: flex;
+    width: 100%;
+}
+.images img {
+    height: 100%;
+    width: 100%;
+    transition: all 0.15s ease;
+}
+.images input {
+    display: none;
+}
+.dots {
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+}
+.dots label {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: solid #fff 3px;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    margin: 5px;
+}
+.dots label:hover {background: #fff;}
+#img1:checked ~ .m1 {
+    margin-left: 0%;
+}
+#img2:checked ~ .m2 {
+    margin-left: -100%;
+}
+#img3:checked ~ .m3 {
+    margin-left: -200%;
 }
